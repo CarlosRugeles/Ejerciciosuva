@@ -1,0 +1,18 @@
+﻿PROBLEMA
+
+Kara Van y Lee Sabre están desolados. Hace unos pocos meses, ellos tomaron un préstamo para comprar un carro nuevo, pero ahora están un sábado por la noche arruinados en casa sin ruedas y sin dinero.
+Pues están quebrados y sin carro. El seguro pagó $10,000 , el valor actual del carro. El único  problema es  que deben $15,000 al banco, y el banco quiere el pago de inmediato, desde que no tienen el carro como garantía del préstamo. En un momento, esta desafortunada pareja no sólo perdió el carro, sino que también $5,000 en efectivo.
+Lo que Kara y Lee no tuvieron en cuenta fue la pérdida del valor comercial del carro como del modelo.
+Cada mes que se paga el préstamo, éste reduce el valor del coche. De esta manera, el carro mensualmente se deprecia y se hace más viejo. La tarea es escribir un programa que calcule la primera vez, medida en meses, que el valor de la deuda es menor que el valor actual del carro. Para este problema, la depreciación es medida en porcentaje del valor de los meses anteriores.
+
+ENTRADA
+
+Se ingresa información de varios préstamos. La primera línea contiene la siguiente información del préstamo: duración en meses del préstamo, la cuota inicial, el valor de la deuda, y por último el numero de depreciación a seguir. Todos los valores son positivos, con un plazo máximo de 100 meses y un préstamo máximo de $75,000. Dado que la depreciación no es constante, el rango de variación de la depreciación se especifica en una serie de registros de depreciación. Cada línea contiene un registro con dos números donde el primero es el número del mes y el siguiente el porcentaje de depreciación entre 0 y 1. El valor de depreciación va incrementando en orden por mes, empezando en el mes 0. El mes0 es la depreciación que aplica inmediatamente después de que sale el carro del concesionario y esta siempre está presente en los datos. Es posible que no para todos los meses, se ingrese el valor de depreciación, cuando esto ocurra se toma el valor de depreciación del mes anterior.
+La entrada de datos habrá finalizado cuando se escriba un valor negativo.
+
+Para simplificar, asumiremos que el prestamos es hecho con 0% de interés, de esta manera el valor inicial del carro será el valor del préstamo mas el valor de la primera cuota. Es posible que el valor de la deuda de un carro presente valores positivos menores que $1,00. De ninguna manera redondee los números de los centavos.
+
+
+SALIDA
+
+Por cada préstamo, debe mostrar el número de meses que pagó antes que el deudor deba menos que el valor actual del carro.
